@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premiumin Ajaaa | Layanan Streaming Premium Murah & Bergaransi</title>
+    <meta name="description" content="Jual akun premium Netflix, Spotify, Disney+, Youtube, Canva murah dan bergaransi.">
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            500: '#14b8a6', // Teal primary
+                            600: '#0d9488',
+                            900: '#134e4a',
+                        },
+                        dark: {
+                            900: '#0f172a',
+                            800: '#1e293b',
+                            700: '#334155',
+                        }
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+        
+        .glass-nav {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-dark-900 text-slate-200 antialiased selection:bg-brand-500 selection:text-white">
+
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <div class="bg-gradient-to-br from-brand-500 to-purple-600 p-2 rounded-lg">
+                        <img src="https://unpkg.com/lucide-static@latest/icons/zap.svg" class="w-6 h-6 text-white" alt="Logo">
+                    </div>
+                    <span class="text-xl font-bold text-white tracking-tight">PremiumIn<span class="text-brand-500">Ajaaa</span></span>
+                </div>
+
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="hover:text-brand-500 transition-colors px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="#products" class="hover:text-brand-500 transition-colors px-3 py-2 text-sm font-medium">Produk</a>
+                        <a href="#features" class="hover:text-brand-500 transition-colors px-3 py-2 text-sm font-medium">Keunggulan</a>
+                        <a href="#faq" class="hover:text-brand-500 transition-colors px-3 py-2 text-sm font-medium">FAQ</a>
+                    </div>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="https://wa.me/6285174478377" target="_blank" class="bg-brand-600 hover:bg-brand-500 text-white px-5 py-2 rounded-full font-medium text-sm transition-all shadow-lg shadow-brand-500/20 flex items-center gap-2">
+                        <img src="https://unpkg.com/lucide-static@latest/icons/message-circle.svg" class="w-4 h-4">
+                        Hubungi Admin
+                    </a>
+                </div>
+
+                <div class="-mr-2 flex md:hidden">
+                    <button onclick="toggleMobileMenu()" class="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-white hover:bg-dark-800 focus:outline-none">
+                        <img src="https://unpkg.com/lucide-static@latest/icons/menu.svg" class="w-6 h-6">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-800 border-b border-dark-700">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="text-slate-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#products" class="text-slate-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Produk</a>
+                <a href="#features" class="text-slate-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Keunggulan</a>
+                <a href="https://wa.me/6285174478377" class="text-brand-400 block px-3 py-2 rounded-md text-base font-bold">Chat WhatsApp</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-purple-500/20 rounded-full blur-[100px]"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-brand-500/10 rounded-full blur-[100px]"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-dark-800 border border-dark-700 text-brand-400 text-xs font-semibold uppercase tracking-wide mb-6">
+                <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                Harga Update 2025
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6">
+                Streaming Premium <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-purple-500">Harga Minimum</span>
+            </h1>
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-400">
+                Nikmati akses Netflix, Spotify, Disney+, dan aplikasi premium lainnya dengan harga termurah. Legal, aman, dan bergaransi full.
+            </p>
+            <div class="mt-10 flex justify-center gap-4">
+                <a href="#products" class="bg-white text-dark-900 px-8 py-3.5 rounded-full font-bold hover:bg-slate-200 transition-all flex items-center gap-2 shadow-xl shadow-white/10">
+                    Lihat Produk
+                    <img src="https://unpkg.com/lucide-static@latest/icons/arrow-down.svg" class="w-4 h-4">
+                </a>
+                <a href="https://wa.me/6285174478377" class="bg-dark-800 border border-dark-700 text-white px-8 py-3.5 rounded-full font-semibold hover:bg-dark-700 transition-all">
+                    Tanya Dulu
+                </a>
+            </div>
+            
+            <div class="mt-16 pt-8 border-t border-dark-800/50">
+                <p class="text-sm text-slate-500 mb-4">Metode Pembayaran</p>
+                <div class="flex flex-wrap justify-center items-center gap-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                    <span class="font-bold text-lg">BCA</span>
+                    <span class="font-bold text-lg">Mandiri</span>
+                    <span class="font-bold text-lg">GoPay</span>
+                    <span class="font-bold text-lg">Dana</span>
+                    <span class="font-bold text-lg">ShopeePay</span>
+                    <span class="font-bold text-lg">QRIS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-20 bg-dark-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-dark-900 p-8 rounded-2xl border border-dark-700 hover:border-brand-500/50 transition-all group">
+                    <div class="w-12 h-12 bg-dark-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-900/30 transition-colors">
+                        <img src="https://unpkg.com/lucide-static@latest/icons/shield-check.svg" class="w-6 h-6 text-brand-500">
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Full Garansi</h3>
+                    <p class="text-slate-400">Semua produk yang kami jual bergaransi aktif. Jika ada kendala, admin siap membantu hingga tuntas.</p>
+                </div>
+                <div class="bg-dark-900 p-8 rounded-2xl border border-dark-700 hover:border-brand-500/50 transition-all group">
+                    <div class="w-12 h-12 bg-dark-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-900/30 transition-colors">
+                        <img src="https://unpkg.com/lucide-static@latest/icons/clock.svg" class="w-6 h-6 text-brand-500">
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Proses Cepat</h3>
+                    <p class="text-slate-400">Order diproses segera pada jam operasional (09:00 - 22:00). Tidak perlu menunggu lama.</p>
+                </div>
+                <div class="bg-dark-900 p-8 rounded-2xl border border-dark-700 hover:border-brand-500/50 transition-all group">
+                    <div class="w-12 h-12 bg-dark-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-900/30 transition-colors">
+                        <img src="https://unpkg.com/lucide-static@latest/icons/wallet.svg" class="w-6 h-6 text-brand-500">
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Harga Termurah</h3>
+                    <p class="text-slate-400">Dapatkan harga reseller yang jauh lebih hemat dibandingkan berlangganan langsung di aplikasi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Pilih Layanan</h2>
+                <div class="flex flex-wrap justify-center gap-2" id="filter-buttons">
+                    <button onclick="filterProducts('all')" class="filter-btn active px-6 py-2 rounded-full text-sm font-semibold bg-brand-600 text-white transition-all">Semua</button>
+                    <button onclick="filterProducts('streaming')" class="filter-btn px-6 py-2 rounded-full text-sm font-semibold bg-dark-800 text-slate-400 hover:text-white hover:bg-dark-700 transition-all">Streaming Film</button>
+                    <button onclick="filterProducts('music')" class="filter-btn px-6 py-2 rounded-full text-sm font-semibold bg-dark-800 text-slate-400 hover:text-white hover:bg-dark-700 transition-all">Musik</button>
+                    <button onclick="filterProducts('app')" class="filter-btn px-6 py-2 rounded-full text-sm font-semibold bg-dark-800 text-slate-400 hover:text-white hover:bg-dark-700 transition-all">Editing & Apps</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="product-grid">
+                
+                <div class="product-card streaming bg-dark-800 rounded-xl overflow-hidden border border-dark-700 hover:border-red-600/50 transition-all duration-300 hover:shadow-xl hover:shadow-red-900/10 group">
+                    <div class="h-2 bg-red-600 w-full"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Netflix Premium</h3>
+                                <p class="text-xs text-slate-400">4K UHD • Anti Limit</p>
+                            </div>
+                            <div class="bg-red-600/10 p-2 rounded-lg">
+                                <img src="https://unpkg.com/lucide-static@latest/icons/tv.svg" class="w-6 h-6 text-red-500">
+                            </div>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex justify-between text-sm items-center border-b border-dark-700 pb-2">
+                                <span class="text-slate-300">Sharing 1 Bulan</span>
+                                <span class="font-bold text-brand-400">Rp 15.000</span>
+                            </li>
+                            <li class="flex justify-between text-sm items-center border-b border-dark-700 pb-2">
+                                <span class="text-slate-300">Sharing 1 Tahun</span>
+                                <span class="font-bold text-brand-400">Rp 175.000</span>
+                            </li>
+                            <li class="flex justify-between text-sm items-center border-b border-dark-700 pb-2">
+                                <span class="text-slate-300">Private 1 Bln (1 Dev)</span>
+                                <span class="font-bold text-brand-400">Rp 60.000</span>
+                            </li>
+                            <li class="flex justify-between text-sm items-center">
+                                <span class="text-slate-300">Private 1 Bln (2 Dev)</span>
+                                <span class="font-bold text-brand-400">Rp 120.000</span>
+                            </li>
+                        </ul>
+                        <button onclick="order('Netflix Premium')" class="w-full py-3 rounded-lg bg-dark-700 text-white font-semibold hover:bg-red-600 transition-colors flex items-center justify-center gap-2">
+                            Pesan Sekarang
+                            <img src="https://unpkg.com/lucide-static@latest/icons/shopping-cart.svg" class="w-4 h-4">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card streaming bg-dark-800 rounded-xl overflow-hidden border border-dark-700 hover:border-blue-600/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-900/10 group">
+                    <div class="h-2 bg-blue-600 w-full"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Disney+ Hotstar</h3>
+                                <p class="text-xs text-slate-400">Movies & Series</p>
+                            </div>
+                            <div class="bg-blue-600/10 p-2 rounded-lg">
+                                <img src="https://unpkg.com/lucide-static@latest/icons/film.svg" class="w-6 h-6 text-blue-500">
+                            </div>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex justify-between text-sm items-center border-b border-dark-700 pb-2">
+                                <span class="text-slate-300">Sharing 1 Bulan</span>
+                                <span class="font-bold text-brand-400">Rp 32.000</span>
+                            </li>
+                            <li class="flex justify-between text-sm items-center pt-2">
+                                <span class="text-slate-500 italic">Stok Lain Kosong</span>
+                            </li>
+                        </ul>
+                        <div class="mt-auto"></div> <button onclick="order('Disney+ Hotstar')" class="w-full mt-10 py-3 rounded-lg bg-dark-700 text-white font-semibold hover:bg-blue-600 transition-colors flex items-center justify-center gap-2">
+                            Pesan Sekarang
+                            <img src="https://unpkg.com/lucide-static@latest/icons/shopping-cart.svg" class="w-4 h-4">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card streaming bg-dark-800 rounded-xl overflow-hidden border border-dark-700 hover:border-red-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-red-900/10 group">
+                    <div class="h-2 bg-red-500 w-full"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Youtube Premium</h3>
+                                <p class="text-xs text-slate-400">No Ads • Background Play</p>
+                            </div>
+                            <div class="bg-red-500/10 p-2 rounded-lg">
+                                <img src="https://unpkg.com/lucide-static@latest/icons/play-circle.svg" class="w-6 h-6 text-red-500">
+                            </div>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex justify-between text-sm items-center border-b border-dark-700 pb-2">
+                                <span class="text-slate-300">Email Cust 1 Bln</span>
+                                <span class="font-bold text-brand-400">Rp 10.000</span>
+                            </li>
+                            <li class="flex justify-between text-sm items-center border-b border-dark-700 pb-2">
+                                <span class="text-slate-300">Email Admin 3 Bln</span>
+                                <span class="font-bold text-brand-400">Rp 35.000</span>
+                            </li>
+                            <li class="flex justify-between text-sm items-center">
+                                <span class="text-slate-300">Email Admin 4 Bln</span>
+                                <span class="font-bold text-brand-400">Rp 45.000</span>
+                            </li>
+                        </ul>
+                        <button onclick="order('Youtube Premium')" class="w-full py-3 rounded-lg bg-dark-700 text-white font-semibold hover:bg-red-500 transition-colors flex items-center justify-center gap-2">
+                            Pesan Sekarang
+                            <img src="https://unpkg.com/lucide-static@latest/icons/shopping-cart.svg" class="w-4 h-4">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card music bg-dark-800 rounded-xl overflow-hidden border border-dark-700 hover:border-green-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-green-900/10 group">
+                    <div class="h-2 bg-green-500 w-full"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Spotify Premium</h3>
+                                <p class="text-xs text-slate-400">Family Plan • Via Email</p>
+                            </div>
+                            <div class="bg-green-500/10 p-2 rounded-lg">
+                                <img src="https://unpkg.com/lucide-static@latest/icons/music.svg" class="w-6 h-6 text-green-500">
+                            </div>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex justify-between text-sm items-center border-b border-dark-700 pb-2">
+                                <span class="text-slate-300">Family 1 Bulan</span>
+                                <span class="font-bold text-brand-400">Rp 30.000</span>
+                            </li>
+                            <li class="flex justify-between text-sm items-center border-b border-dark-700 pb-2">
+                                <span class="text-slate-300">Family 2 Bulan</span>
+                                <span class="font-bold text-brand-400">Rp 55.000</span>
+                            </li>
+                            <li class="flex justify-between text-sm items-center">
+                                <span class="text-slate-300">Family 3 Bulan</span>
+                                <span class="font-bold text-brand-400">Rp 80.000</span>
+                            </li>
+                        </ul>
+                        <button onclick="order('Spotify Premium')" class="w-full py-3 rounded-lg bg-dark-700 text-white font-semibold hover:bg-green-500 transition-colors flex items-center justify-center gap-2">
+                            Pesan Sekarang
+                            <img src="https://unpkg.com/lucide-static@latest/icons/shopping-cart.svg" class="w-4 h-4">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card streaming bg-dark-800 rounded-xl overflow-hidden border border-dark-700 hover:border-pink-600/50 transition-all duration-300 hover:shadow-xl hover:shadow-pink-900/10 group">
+                    <div class="h-2 bg-pink-600 w-full"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Vidio Premier</h3>
+                                <p class="text-xs text-slate-400">Sports & Local TV</p>
+                            </div>
+                            <div class="bg-pink-600/10 p-2 rounded-lg">
+                                <img src="https://unpkg.com/lucide-static@latest/icons/monitor-play.svg" class="w-6 h-6 text-pink-500">
+                            </div>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex justify-between text-sm items-center border-b border-dark-700 pb-2">
+                                <span class="text-slate-300">Platinum 1 Bln</span>
+                                <span class="font-bold text-brand-400">Rp 55.000</span>
+                            </li>
+                            <li class="flex justify-between text-sm items-center border-b border-dark-700 pb-2">
+                                <span class="text-slate-300">Private HP 1 Bln</span>
+                                <span class="font-bold text-brand-400">Rp 28.000</span>
+                            </li>
+                             <li class="flex justify-between text-sm items-center">
+                                <span class="text-slate-300">Private TV 1 Bln</span>
+                                <span class="font-bold text-brand-400">Rp 25.000</span>
+                            </li>
+                        </ul>
+                        <button onclick="order('Vidio Premier')" class="w-full py-3 rounded-lg bg-dark-700 text-white font-semibold hover:bg-pink-600 transition-colors flex items-center justify-center gap-2">
+                            Pesan Sekarang
+                            <img src="https://unpkg.com/lucide-static@latest/icons/shopping-cart.svg" class="w-4 h-4">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card app bg-dark-800 rounded-xl overflow-hidden border border-dark-700 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-900/10 group">
+                    <div class="h-2 bg-cyan-500 w-full"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Canva Pro</h3>
+                                <p class="text-xs text-slate-400">Design & Editing</p>
+                            </div>
+                            <div class="bg-cyan-500/10 p-2 rounded-lg">
+                                <img src="https://unpkg.com/lucide-static@latest/icons/palette.svg" class="w-6 h-6 text-cyan-500">
+                            </div>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex justify-between text-sm items-center border-b border-dark-700 pb-2">
+                                <span class="text-slate-300">1 Bulan (Email Cust)</span>
+                                <span class="font-bold text-brand-400">Rp 8.000</span>
+                            </li>
+                            <li class="flex justify-between text-sm items-center border-b border-dark-700 pb-2">
+                                <span class="text-slate-300">1 Bulan (Email Admin)</span>
+                                <span class="font-bold text-brand-400">Rp 10.000</span>
+                            </li>
+                            <li class="flex justify-between text-sm items-center">
+                                <span class="text-slate-300">1 Tahun (Email Cust)</span>
+                                <span class="font-bold text-brand-400">Rp 55.000</span>
+                            </li>
+                        </ul>
+                        <button onclick="order('Canva Pro')" class="w-full py-3 rounded-lg bg-dark-700 text-white font-semibold hover:bg-cyan-500 transition-colors flex items-center justify-center gap-2">
+                            Pesan Sekarang
+                            <img src="https://unpkg.com/lucide-static@latest/icons/shopping-cart.svg" class="w-4 h-4">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card streaming bg-dark-800 rounded-xl overflow-hidden border border-dark-700 hover:border-yellow-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-yellow-900/10 group">
+                    <div class="h-2 bg-yellow-500 w-full"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Viu Premium</h3>
+                                <p class="text-xs text-slate-400">Drakor & Asian Movies</p>
+                            </div>
+                            <div class="bg-yellow-500/10 p-2 rounded-lg">
+                                <img src="https://unpkg.com/lucide-static@latest/icons/play.svg" class="w-6 h-6 text-yellow-500">
+                            </div>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex justify-between text-sm items-center border-b border-dark-700 pb-2">
+                                <span class="text-slate-300">Private 1 Bulan</span>
+                                <span class="font-bold text-brand-400">Rp 15.000</span>
+                            </li>
+                            <li class="flex justify-between text-sm items-center border-b border-dark-700 pb-2">
+                                <span class="text-slate-300">Private 3 Bulan</span>
+                                <span class="font-bold text-brand-400">Rp 30.000</span>
+                            </li>
+                             <li class="flex justify-between text-sm items-center">
+                                <span class="text-slate-300">Private 1 Tahun</span>
+                                <span class="font-bold text-brand-400">Rp 85.000</span>
+                            </li>
+                        </ul>
+                        <button onclick="order('Viu Premium')" class="w-full py-3 rounded-lg bg-dark-700 text-white font-semibold hover:bg-yellow-500 transition-colors flex items-center justify-center gap-2">
+                            Pesan Sekarang
+                            <img src="https://unpkg.com/lucide-static@latest/icons/shopping-cart.svg" class="w-4 h-4">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card streaming bg-dark-800 rounded-xl overflow-hidden border border-dark-700 hover:border-orange-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-orange-900/10 group">
+                    <div class="h-2 bg-orange-500 w-full"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">WeTV VIP</h3>
+                                <p class="text-xs text-slate-400">Asian Drama</p>
+                            </div>
+                            <div class="bg-orange-500/10 p-2 rounded-lg">
+                                <img src="https://unpkg.com/lucide-static@latest/icons/clapperboard.svg" class="w-6 h-6 text-orange-500">
+                            </div>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex justify-between text-sm items-center border-b border-dark-700 pb-2">
+                                <span class="text-slate-300">Sharing 1 Bulan</span>
+                                <span class="font-bold text-brand-400">Rp 18.000</span>
+                            </li>
+                             <li class="flex justify-between text-sm items-center">
+                                <span class="text-slate-300">Sharing 3 Bulan</span>
+                                <span class="font-bold text-brand-400">Rp 45.000</span>
+                            </li>
+                        </ul>
+                        <button onclick="order('WeTV VIP')" class="w-full py-3 mt-8 rounded-lg bg-dark-700 text-white font-semibold hover:bg-orange-500 transition-colors flex items-center justify-center gap-2">
+                            Pesan Sekarang
+                            <img src="https://unpkg.com/lucide-static@latest/icons/shopping-cart.svg" class="w-4 h-4">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card app bg-dark-800 rounded-xl overflow-hidden border border-dark-700 hover:border-gray-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-gray-900/10 group">
+                    <div class="h-2 bg-gray-500 w-full"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">CapCut Pro</h3>
+                                <p class="text-xs text-slate-400">Video Editing</p>
+                            </div>
+                            <div class="bg-gray-500/10 p-2 rounded-lg">
+                                <img src="https://unpkg.com/lucide-static@latest/icons/scissors.svg" class="w-6 h-6 text-gray-400">
+                            </div>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex justify-between text-sm items-center border-b border-dark-700 pb-2">
+                                <span class="text-slate-300">1 Bulan</span>
+                                <span class="font-bold text-brand-400">Rp 20.000</span>
+                            </li>
+                            <li class="flex justify-between text-sm items-center">
+                                <span class="text-slate-300">1 Tahun</span>
+                                <span class="font-bold text-brand-400">Rp 55.000</span>
+                            </li>
+                        </ul>
+                        <button onclick="order('CapCut Pro')" class="w-full mt-8 py-3 rounded-lg bg-dark-700 text-white font-semibold hover:bg-gray-600 transition-colors flex items-center justify-center gap-2">
+                            Pesan Sekarang
+                            <img src="https://unpkg.com/lucide-static@latest/icons/shopping-cart.svg" class="w-4 h-4">
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-slate-400 text-sm">Produk lainnya (Prime Video, Iqiyi, HBO GO, Bstation) tersedia. Silahkan <a href="https://wa.me/6285174478377" class="text-brand-500 underline">tanya Admin</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-dark-800/30 border-y border-dark-800">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white text-center mb-10">Pertanyaan Umum</h2>
+            <div class="space-y-4">
+                <details class="group bg-dark-900 rounded-xl border border-dark-700 open:border-brand-500/50 transition-all">
+                    <summary class="flex justify-between items-center cursor-pointer p-6 font-medium text-slate-200">
+                        Apakah akunnya legal dan aman?
+                        <img src="https://unpkg.com/lucide-static@latest/icons/chevron-down.svg" class="w-5 h-5 transition-transform group-open:rotate-180">
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-400 text-sm leading-relaxed border-t border-dark-800 pt-4">
+                        Tentu! Kami hanya menjual akun legal yang dibayar menggunakan metode pembayaran resmi (Credit Card/Potong Pulsa). Bukan akun curian, mod, atau bin. Dijamin aman dan anti hold.
+                    </div>
+                </details>
+                <details class="group bg-dark-900 rounded-xl border border-dark-700 open:border-brand-500/50 transition-all">
+                    <summary class="flex justify-between items-center cursor-pointer p-6 font-medium text-slate-200">
+                        Bagaimana sistem garansinya?
+                        <img src="https://unpkg.com/lucide-static@latest/icons/chevron-down.svg" class="w-5 h-5 transition-transform group-open:rotate-180">
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-400 text-sm leading-relaxed border-t border-dark-800 pt-4">
+                        Kami memberikan Full Garansi sesuai durasi langganan. Jika akun bermasalah (back to free/kena limit), cukup lapor ke admin dengan menyertakan bukti pembelian, akun akan diperbaiki atau diganti baru.
+                    </div>
+                </details>
+                <details class="group bg-dark-900 rounded-xl border border-dark-700 open:border-brand-500/50 transition-all">
+                    <summary class="flex justify-between items-center cursor-pointer p-6 font-medium text-slate-200">
+                        Berapa lama proses pengerjaannya?
+                        <img src="https://unpkg.com/lucide-static@latest/icons/chevron-down.svg" class="w-5 h-5 transition-transform group-open:rotate-180">
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-400 text-sm leading-relaxed border-t border-dark-800 pt-4">
+                        Proses pengerjaan biasanya memakan waktu 5-15 menit saat jam operasional (09:00 - 22:00 WIB). Di luar jam tersebut, orderan akan diproses keesokan harinya.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark-900 border-t border-dark-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="bg-brand-500 p-1.5 rounded">
+                            <img src="https://unpkg.com/lucide-static@latest/icons/zap.svg" class="w-4 h-4 text-white">
+                        </div>
+                        <span class="text-lg font-bold text-white">PremiumIn<span class="text-brand-500">Ajaaa</span></span>
+                    </div>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        Solusi hiburan hemat anda. Menyediakan berbagai layanan streaming premium dengan harga mahasiswa.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Jam Operasional</h4>
+                    <ul class="space-y-2 text-sm text-slate-500">
+                        <li>Senin - Sabtu: 09:00 - 22:00</li>
+                        <li>Minggu: 10:00 - 22:00</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Kontak</h4>
+                    <ul class="space-y-2 text-sm text-slate-500">
+                        <li class="flex items-center gap-2">
+                            <img src="https://unpkg.com/lucide-static@latest/icons/message-circle.svg" class="w-4 h-4">
+                            0851-7447-8377
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="https://unpkg.com/lucide-static@latest/icons/instagram.svg" class="w-4 h-4">
+                            @premiuminajaaaa
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Metode Bayar</h4>
+                    <div class="flex flex-wrap gap-2 text-xs text-slate-500">
+                        <span class="bg-dark-800 px-2 py-1 rounded border border-dark-700">BCA</span>
+                        <span class="bg-dark-800 px-2 py-1 rounded border border-dark-700">Mandiri</span>
+                        <span class="bg-dark-800 px-2 py-1 rounded border border-dark-700">GoPay</span>
+                        <span class="bg-dark-800 px-2 py-1 rounded border border-dark-700">Dana</span>
+                        <span class="bg-dark-800 px-2 py-1 rounded border border-dark-700">QRIS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-dark-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-600 text-sm">© 2025 PremiumIn Ajaaa. All rights reserved.</p>
+                <div class="text-slate-700 text-xs">Based on JustPaste.it Price List</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Mobile Menu
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Filter Functionality
+        function filterProducts(category) {
+            const cards = document.querySelectorAll('.product-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            // Button styling
+            buttons.forEach(btn => {
+                // Reset styling
+                btn.classList.remove('bg-brand-600', 'text-white');
+                btn.classList.add('bg-dark-800', 'text-slate-400');
+                
+                // Active styling logic
+                if (btn.innerText.toLowerCase().includes(category) || (category === 'all' && btn.innerText === 'Semua') || (category === 'app' && btn.innerText.includes('Editing'))) {
+                   // This part is handled by the click event implicitly by resetting all first, then setting the clicked one
+                }
+            });
+
+            // Set active button style specifically for the clicked one (simplified approach)
+            event.target.classList.remove('bg-dark-800', 'text-slate-400');
+            event.target.classList.add('bg-brand-600', 'text-white');
+
+
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = 'block';
+                    // subtle animation
+                    card.classList.add('animate-fade-in');
+                } else {
+                    if (card.classList.contains(category)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        }
+
+        // WhatsApp Order Function
+        function order(productName) {
+            const phoneNumber = "6285174478377";
+            const message = `Halo Admin PremiumIn Ajaaa, saya mau order *${productName}*. Apakah stok masih tersedia?`;
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+        }
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
